@@ -14,5 +14,5 @@ jobs:
         uses: matchai/waka-box@master
         env:
           GH_TOKEN: ${{ secrets.grass }}
-          GIST_ID: waka
+          GIST_ID: ${{ secrets.GIST_ID }}  # Gist ID를 시크릿으로 저장
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
